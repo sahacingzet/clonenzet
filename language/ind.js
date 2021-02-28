@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 PENDAFTARAN 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar aine|22*`
+	return`*「 PENDAFTARAN 」*\n\n*Cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar PUTRAELF|22*`
 }
 
 exports.rediregis = () => {
@@ -63,7 +63,7 @@ exports.nsfwoff = () => {
 }
 
 exports.bug = () => {
-	return`*Masalah telah di laporkan ke owner AINEBOT, Laporan palsu atau main² tidak akan ditanggapi.*`
+	return`*Masalah telah di laporkan ke owner ENZETBOT, Laporan palsu atau main² tidak akan ditanggapi.*`
 }
 
 exports.wrongf = () => {
@@ -122,18 +122,18 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 //You only get your name fuck !!
 //If INFO DEVELOPER not in change, its okey!!
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role) => { 
-	return `「 *AINE BOT* 」
+	return `「 *ENZET BOT* 」
 
 ◪ *INFO DEVELOPER*
-  ❏ Nama: Muhammad Ridwan Reynaldy
-  ❏ Wa: wa.me/62895330379186
-  ❏ Ig: https://instagram.com/anemio999
-  ❏ Fb: https://facebook.com/ridwan228
+  ❏ Nama: PUTRA ELF NARNIA
+  ❏ Wa: wa.me/6281253534285
+  ❏ Ig: https://instagram.com/putraenzet
+  ❏ Fb: https://facebook.com/putraelf
   ----------------------------------
-◪ *INFO AINEBOT*
-  ❏ Nama: AINEBOT 
-  ❏ Nomor: wa.me/12195159558
-  ❏ Fb: https://facebook.com/ainneboot
+◪ *INFO ENZETBOT*
+  ❏ Nama: ENZETBOT 
+  ❏ Nomor: wa.me/994408987084
+  ❏ Fb: https://facebook.com/putraelf
   ----------------------------------
 ◪ *YOUR INFO*
   ❏ Prefix: 「  ${prefix}  」
@@ -157,6 +157,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ❏ *Gunakan Bot Sebaik-baiknya!*
 ▬▭▬▭▬▭▬▭▬▭▬▭▬
 ◪ *ABOUT*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}info
   ├─ ❏ ${prefix}snk
@@ -182,6 +183,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}imgmaker ❌
   └─ ❏ ${prefix}calendermaker ❌
 ◪ *MEDIA*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}tribunews ❌
   ├─ ❏ ${prefix}beritahoax ❌
@@ -263,6 +265,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}transfer
   └─ ❏ ${prefix}leaderboard
 ◪ *SOUND*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}hai [premium]
   ├─ ❏ ${prefix}hallo [only computer]
@@ -272,6 +275,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}sayonichan [only computer]
   └─ ❏ ${prefix}gtts [premium]
 ◪ *ISLAM*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}jadwalsholat [teks]
   └─ ❏ ${prefix}quran
@@ -293,6 +297,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}randomhentai [premium]
   └─ ❏ ${prefix}nsfwneko
 ◪ *FUN*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}truth
   ├─ ❏ ${prefix}dare
@@ -302,6 +307,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}cium
   └─ ❏ ${prefix}simi
 ◪ *INFORMATION*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}bahasa
   ├─ ❏ ${prefix}kodenegara
@@ -310,6 +316,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}infonomor ❌
   └─ ❏ ${prefix}covid
 ◪ *GROUP*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}tagall
   ├─ ❏ ${prefix}listadmin
@@ -330,11 +337,15 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}leveling [1/0]
   └─ ❏ ${prefix}simih [1/0]
 ◪ *OTHER*
+═══════════════════════════
   │
   ├─ ❏ ${prefix}wame
   ├─ ❏ ${prefix}qrcode
   └─ ❏ ${prefix}afk
-◪ *POWERED BY AINEBOT*
+═══════════════════════════
+◪ *POWERED BY ENZETBOT*
+◪ *SINCE 02-02-2021*
+═══════════════════════════
 `
 }
 
