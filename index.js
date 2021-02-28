@@ -48,11 +48,11 @@ const { ind } = require('./language')
 /********** MENU SETTING **********/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Admin Ainebot\n' 
-            + 'ORG: Pengembang AINEBOT;\n' 
+            + 'FN:Admin Enzetbot\n' 
+            + 'ORG: Pengembang ENZETBOT;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6281253534285:+62 812-5353-4285\n' 
             + 'END:VCARD'
-prefix = '#'
+prefix = '!'
 blocked = []   
 limitawal = 5
 memberlimit = 0
@@ -938,7 +938,7 @@ client.on('group-participants-update', async (anu) => {
 				client.sendMessage(from, ainecs, MessageType.audio, { quoted: mek, ptt: true })
 				await limitAdd(sender)
 				break
-              case 'botme':
+              case 'aine':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (!isPremium) return reply('Maaf kamu bukan user premium!')
@@ -1139,7 +1139,7 @@ client.on('group-participants-update', async (anu) => {
                 		const jmla = args[1]
                 		if (jmla <= 1) return reply(`minimal gift limit adalah 1`)
                 		if (isNaN(jmla)) return reply(`limit harus berupa angka`)
-                		if (!nomerr) return reply(`maaf format salah\nmasukan parameter yang benar\ncontoh : ${prefix}giftlimit @62895710074883 20`)
+                		if (!nomerr) return reply(`maaf format salah\nmasukan parameter yang benar\ncontoh : ${prefix}giftlimit @6281253534285 20`)
                 		const cysz = nomerr + '@s.whatsapp.net'
                 		var found = false
                         			Object.keys(_limit).forEach((i) => {
