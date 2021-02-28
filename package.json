@@ -18,15 +18,15 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Muhammad Ridwan Reynaldy",
+  "author": "Excel saputra junaidi",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anemio/ainebotv5.git"
+    "url": "git+https://github.com/sahacingenzet/clonenzet.git"
   },
   "bugs": {
-    "url": "https://github.com/anemio/ainebotv5/issues"
+    "url": "https://github.com/sahacingenzet/clonenzet/issues"
   },
-"homepage": "https://github.com/anemio/ainebotv5/readme",
+"homepage": "https://github.com/sahacingenzet/clonenzet/readme",
 "license": "ISC",
 "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
