@@ -3,8 +3,8 @@ const donasi = () => {
 
 ◪ *DONASI*
   │
-  ├─ ❏ *Pulsa*
-  └─ ❏ 0895-3303-79186`
+  ├─ ❏ *Pulsa/dana/gopay*
+  └─ ❏ 0812-5353-4285`
 }
 
 exports.donasi = donasi
