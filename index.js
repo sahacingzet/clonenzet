@@ -930,16 +930,15 @@ client.on('group-participants-update', async (anu) => {
               case 'hai':
               case 'hi':
               case 'hei':
-              case 'hey':
-              case 'hii':
+	      case 'p':			
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (!isPremium) return reply('Maaf kamu bukan user premium!')
-				let ainecs = fs.readFileSync('./mp3/WhatsApp-Ptt-2021-02-10-at-02.16.542.opus')
+				let ainecs = fs.readFileSync('./mp3/PTT-20210215-WA0546.opus')
 				client.sendMessage(from, ainecs, MessageType.audio, { quoted: mek, ptt: true })
 				await limitAdd(sender)
 				break
-              case 'aine':
+              case 'botme':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (!isPremium) return reply('Maaf kamu bukan user premium!')
@@ -1644,7 +1643,7 @@ client.on('group-participants-update', async (anu) => {
 				if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(ind.stikga())
 				anu = await fetchJson(`https://api.zeks.xyz/api/ytmp3?url=${args[0]}&apikey=apivinz`, {method: 'get'})
 				if (anu.error) return reply(anu.error)
-				teks = `❏  ${anu.result.title}\n❏ *Ukuran* : ${anu.result.size}\n\n❏ *Tunggu Bentar Ya Kak, Audionya Lagi Di Kirim...*`
+				teks = `❏  ${anu.result.title}\n❏ *Ukuran* : ${anu.result.size}\n\n❏ *Tunggu Bentar Ya Kak, Audionya Lagi Di Kirim,sambil menunggu mending beres beres rumah biar bersih...*`
 				thumb = await getBuffer(anu.result.thumbnail)
 				client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 				buffer = await getBuffer(anu.result.url_audio)
@@ -2521,7 +2520,7 @@ client.on('group-participants-update', async (anu) => {
 		case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*INFO OWNER*\n*Owner bot* : Muhammad Ridwan Reynaldy\n*No Owner* : wa.me/62895330379186\n*Ig owner* : www.instagram.com/anemio999\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
+					teks = `*INFO OWNER*\n*Owner bot* : Muhammad Ridwan Reynaldy\n*No Owner* : wa.me/6281253534285\n*Ig owner* : www.instagram.com/putraenzet\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
 					buffer = await getBuffer(`https://i.ibb.co/4jknX6w/pp.jpg`)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -2553,10 +2552,8 @@ client.on('group-participants-update', async (anu) => {
 							text: ress,
                          				contextInfo: {mentionedJid: [nomor]},
                      			}
-					client.sendMessage('62895330379186@s.whatsapp.net', options, text, {quoted: mek})
-					client.sendMessage('6281315113882@s.whatsapp.net', options, text, {quoted: mek})
-					client.sendMessage('6282148618789@s.whatsapp.net', options, text, {quoted: mek})
-					reply('REQUEST ANDA TELAH SAMPAI KE OWNER AINEBOT, Requests palsu atau main² tidak akan ditanggapi.')
+					client.sendMessage('6281253534285@s.whatsapp.net', options, text, {quoted: mek})
+	                                reply('REQUEST ANDA TELAH SAMPAI KE OWNER ENZETBOT, Requests palsu atau main² tidak akan ditanggapi.')
 					break
 		case 'smsfree':
 					if (!isPremium) return reply('Maaf kamu bukan user premium!')
@@ -2568,7 +2565,7 @@ client.on('group-participants-update', async (anu) => {
 							text: resse,
                          				contextInfo: {mentionedJid: [nomorrs]},
                      			}
-					client.sendMessage('62895330379186@s.whatsapp.net', options, text, {quoted: mek})
+					client.sendMessage('6281253534285@s.whatsapp.net', options, text, {quoted: mek})
 					reply('SMS Anda akan terikirim, Mohon sabar kami proses..\nJika tidak terkirim maka kuota sms kami telah habis!!')
 					break
 		case 'blocklist': 
@@ -3453,7 +3450,7 @@ client.on('group-participants-update', async (anu) => {
 					break
 		case 'hargaprem':
 		case 'hargapremium':
-					client.sendMessage(from, 'Level 100 = Free 3 day (premium)\n10k = 7day (premium)\n25k = perbulan (premium)',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'Level 100 = Free 1 day (premium)\n10k = 5day (premium)\n25k = perbulan (premium)',MessageType.text, { quoted: mek} )
 					break
 		case 'buypremium':
 					client.sendMessage(from, 'Ingin membeli premium?\nHarap hubungi kami : wa.me/62895330379186',MessageType.text, { quoted: mek} )
@@ -3466,9 +3463,9 @@ client.on('group-participants-update', async (anu) => {
 					if (!isPremium) return reply('Maaf kamu bukan user premium!')
 					client.sendMessage(from, 'Selamat kamu sudah berlangganan 30 hari',MessageType.text, { quoted: mek} )
 					break
-		case 'buyprem7day':
+		case 'buyprem5day':
 					if (!isPremium) return reply('Maaf kamu bukan user premium!')
-					client.sendMessage(from, 'Selamat kamu sudah berlangganan 7 hari',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'Selamat kamu sudah berlangganan 5 hari',MessageType.text, { quoted: mek} )
 					break
 		case 'test':
 					client.sendMessage(from, 'Active',MessageType.text, { quoted: mek} )
@@ -3480,16 +3477,16 @@ client.on('group-participants-update', async (anu) => {
 					client.sendMessage(from, 'Waalaikumusalam',MessageType.text, { quoted: mek} )
 					break
 		case 'kontol':
-					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/62895330379186',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281253534285',MessageType.text, { quoted: mek} )
 					break
 		case 'memek':
-					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/62895330379186',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281253534285',MessageType.text, { quoted: mek} )
 					break
 		case 'jembut':
-					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/62895330379186',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281253534285',MessageType.text, { quoted: mek} )
 					break
 		case 'ngentod':
-					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/62895330379186',MessageType.text, { quoted: mek} )
+					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281253534285',MessageType.text, { quoted: mek} )
 					break
 		case 'kntl':
 					client.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/62895330379186',MessageType.text, { quoted: mek} )
@@ -3584,7 +3581,7 @@ client.on('group-participants-update', async (anu) => {
 						reply('*Suksess broadcast* ')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST AINEBOT 」*\n\nDari : Owner\nPengirim : wa.me/${(sender.split('@')[0])}\nPesan : ${body.slice(4)}`)
+							sendMess(_.jid, `*「 BROADCAST ENZETBOT 」*\n\nDari : Owner\nPengirim : wa.me/${(sender.split('@')[0])}\nPesan : ${body.slice(4)}`)
 						}
 						reply('*Suksess broadcast* ')
 					}
