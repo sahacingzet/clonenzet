@@ -50,17 +50,17 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Admin Ainebot\n' 
             + 'ORG: Pengembang AINEBOT;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=62895330379186:+62 895-3303-79186\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6281253534285:+62 812-5353-4285\n' 
             + 'END:VCARD'
 prefix = '#'
 blocked = []   
 limitawal = 5
 memberlimit = 0
-cr = '*AINEBOT THIS IS ALREADY VERIFIED*'
+cr = '*ENZETBOT THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["62895330379186@s.whatsapp.net"] 
-const pacarNumber = ["62895321438933@s.whatsapp.net"]
+const ownerNumber = ["6281253534285@s.whatsapp.net"] 
+const pacarNumber = ["6281253534285@s.whatsapp.net"]
 /************************************/
 
        
